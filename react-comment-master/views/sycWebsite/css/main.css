@@ -1,0 +1,16 @@
+ #myCarousel .carousel-inner img{height: 200px;width: 100%}
+.modal_login{
+    height: 300px;
+    text-align: center;
+}
+.modal_login input{
+    width: 60%;
+    height: 30px;
+    margin-top:30px;
+}
+.modal_login h2{
+	width: 60%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top:30px;
+}

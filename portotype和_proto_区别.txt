@@ -1,0 +1,27 @@
+//注意：a作为构造函数时的prototype属性与a作为普通函数时的__proto__属性并不相等
+console.log(a.prototype == a.__proto__);//false
+
+//这个怎么理解呢，我们再看看如下代码
+console.log(a.__proto__);         //function (){}
+console.log(a.__proto__ == Function.prototype);//true
+
+//实际上，a作为一个普通函数调用的时候，它的构造函数就是内置对象Function了，所以它指向的原型对象，自然对应就是Function.prototype.
+//其实这个和console.log(b.__proto__ == a.prototype)是一样的道理
+
+//我们继续看如下代码，当a作为构造函数时，它的原型，和它的原型的原型都指向神马
+console.log(a.prototype);                   //a{}
+console.log(a.prototype.__proto__);  //Object{}
+
+//我们再看看a作为普通函数时，它原型的原型指向神马
+console.log(a.__proto__.__proto__); //Object{}
+
+//即有以下结果
+console.log(a.__proto__.__proto__ == a.prototype.__proto__); //true
+
+//结论：prototype属性可以给函数和对象添加可共享（继承）的方法、属性，而__proto__是查找某函数或对象的原型链方式
+//因此，有人说原型链实际是通过__proto__属性链接起来的，也是有一定道理的
+
+
+
+JavaScript中的函数是对象，而且除了使用字面量定义外，都需要通过函数来创建对象；
+prototype是构造函数访问原型对象，__proto__是对象实例访问原型对象。

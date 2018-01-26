@@ -1,0 +1,11 @@
+var n = readInt();
+var arr = [];
+var i = 0;
+for(; i < n; i++){      arr.push(readInt())}
+i = 0;
+for(;i < n-1; i++){     if(arr[i] > arr[i+1]) break;}
+var j = i;
+for(;j < n-1;j++){     if(arr[j] < arr[j+1]) break;}
+var k = j;
+for(;k < n-1;k++){     if(arr[k] > arr[k+1]){print('no');break;}}
+if(arr[j-1] > arr[i] && arr[i] < arr[j+1]) print('yes');     

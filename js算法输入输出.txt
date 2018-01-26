@@ -1,0 +1,13 @@
+//输入三行的情况
+var readline=require("readline");
+var rl=readline.createInterface({
+    input:process.stdin,
+    output:process.stdout
+});
+var arr = [];
+rl.on("line",function(line){
+    arr.push(line.trim());
+    //写代码
+}
+
+//输出用consolo.log()

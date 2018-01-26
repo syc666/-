@@ -1,0 +1,2 @@
+因为 this.props 和 this.state 可能是异步更新的，你不能依赖他们的值计算下一个state(状态)。
+解决办法是this.setState（（）=>{}）里面放函数，第一个参数是prevState,第二个参数是props

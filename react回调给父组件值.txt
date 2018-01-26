@@ -1,0 +1,1 @@
+(this.props.onsmartg)(event);//在子组件的回调函数里。

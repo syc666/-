@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="description" content="孙业春的个人网站">
+	<meta name="description" content="孙业春的个人博客，孙业春的技术作品，孙业春的生活成长">
+	<meta name="keywords" content="孙业春, 个人博客, 个人网站, web前端,JavaScript,css,html">
+	<meta name="author" content="孙业春,sunyechun">
+	<title>孙业春的个人网站</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">  
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="SHORTCUT ICON" href="img/1-9.png">
+	<script src="jq/jquery-3.2.0.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Spring</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							 <a href="index.html">个人介绍</a>
+						</li>
+						<li class="active">
+							 <a  href="blog.html">个人博客</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人作品<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="p_works.html">2d小游戏</a>
+								</li>
+						
+								<li class="divider">
+								</li>
+								<li>
+									 <a href="p_works.html">图书管理系统</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+						</div> <button type="submit" class="btn btn-default">博客搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							 <a href="#" class="btn btn-lg" data-toggle="modal" data-target="#myModal">登录</a>
+						</li>
+						<li>
+							 <a href="#" class="btn btn-lg" data-toggle="modal" data-target="#myModal2">注册</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">网站详情<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a class="btn  btn-lg" data-toggle="modal" data-target="#myModal4" href="#">访客量：100</a>
+								</li>
+                                <li class="divider">
+								</li>
+								<li>
+									 <a class="btn  btn-lg" data-toggle="modal" data-target="#myModal3" href="#">网站评分：3.4</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+                                    <a class="btn  btn-lg" data-toggle="modal" data-target="#myModal5" href="#">网站说明>></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+                </div>
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div>
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+                </div>
+                <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <p>目前网站只做了前端的一些静态内容，后台准备用java.</p>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+                </div>
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+                </div>
+			</nav>
+		</div>
+	</div>
+	<div class="row clearfix"  style="line-height: 30px ;border: 1px solid black">
+		<div class="col-md-4 column">
+		    <h2 style="text-align: center;">ssm配置问题</h2>
+			<ul>
+				<li>			
+					1.参考了http://www.cnblogs.com/zyw-205520/p/4771253.html1，demo里数据库名用中文就不行。
+				</li>
+				<li>
+					2.jdbc.properties里文件不知道为啥一模一样的两个代码，一个可以，一个不可以。（代码中数据库信息有多余的空格）
+				</li>
+				<li>
+					3.让我了解到很多网上参考的和自己的jar版本不一样，要改一些东西，一般看异常就行。
+				</li>
+				
+			</ul>
+		</div>
+		<div class="col-md-4 column">
+		    <h2 style="text-align: center;">struts配置问题</h2>
+			<ul>
+				<li>
+					1.新版本没有xwork，合并到其他了，不需要单独导入.
+				</li>
+				<li>
+					2.没有ng包，这个问题困扰了我一天。
+				</li>
+				<li>
+					3.tomcat和eclipse自身缓存问题。
+				</li>
+				
+			</ul>
+		</div>
+		<div class="col-md-4 column">
+		    <h2 style="text-align: center;">tomcat相关问题</h2>
+			<ul>
+				<li>
+					1.挂载时需要在服务器上下载tomcat，mysql，navicat
+				</li>
+				<li>
+					2.怎么通过ip直接访问？需要把项目放到tomcat的root目录下（项目名去掉，用root代替，root原先的内容全部删除），项目中java编译后的class文件要放到和lib同一级的文件夹里的classes文件夹下（自己建的），把8080端口改为80端口。
+				</li>
+				<li>
+					3.注意事项：如果服务器上tomcat版本过高，可能会需要重下个低版本的，因为jsp文件时，编译cookie有些不兼容；tomcat启动秒退很可能是jdk环境变量配置错误，启动后秒关可能是电脑中有别的tomcat在开着。
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="text-align: center;">
+			<ul class="pagination">
+				<li>
+					 <a href="#">Prev</a>
+				</li>
+				<li>
+					 <a href="#">1</a>
+				</li>
+				<li>
+					 <a href="#">2</a>
+				</li>
+				<li>
+					 <a href="#">3</a>
+				</li>
+				<li>
+					 <a href="#">4</a>
+				</li>
+				<li>
+					 <a href="#">5</a>
+				</li>
+				<li>
+					 <a href="#">Next</a>
+				</li>
+			</ul>
+			<a href="http://www.666syc.com/quercus/wordpress/" style="float: left;font-size: 20px">旧博客链接</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
