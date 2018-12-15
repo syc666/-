@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>  
+<head lang="en">  
+    <meta charset="UTF-8">  
+    <title></title>  
+    <style type="text/css" rel="stylesheet">  
+        #fa{  
+            width: 100%;  
+            height: 170px;  
+            padding: 20px 0px;  
+            background-color: cadetblue;  
+        }  
+        #son{  
+            width: 100%;  
+            height: 20px;  
+            padding: 30px 0px;  
+            background-color: black;  
+            color: white;  
+            text-align: center;  
+            cursor: pointer;  
+        }  
+    </style>  
+</head>  
+<body>  
+<div id="fa" onmousedown="getEventTrigger(event)">  
+    <p id="son" onmousedown="getEventTrigger(event)">点我试试</p>  
+</div>  
+</body>  
+<script type="text/javascript">  
+    var fa = document.getElementById('fa');  
+    var son = document.getElementById('son');  
+
+
+    function getEventTrigger(event)  
+    {  
+        x=event.currentTarget;  
+        y=event.target;  
+        alert("currentTarget 指向： " + x.id + "， target指向：" + y.id);  
+    }  
+</script>  
+</html>
+
+target在事件流的目标阶段；currentTarget在事件流的捕获，目标及冒泡阶段。只有当事件流处在目标阶段的时候，两个的指向才是一样的， 而当处于捕获和冒泡阶段的时候，target指向被单击的对象而currentTarget指向当前事件活动的对象(注册该事件的对象)（一般为父级）。this指向永远和currentTarget指向一致（只考虑this的普通函数调用）。
